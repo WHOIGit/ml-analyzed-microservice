@@ -1,6 +1,6 @@
-# Template Stateless Service
+# Ml-analyzed Microservice
 
-An example template stateless service. Intended to be used as starter code for services.
+A microservice for obtaining the ml_analyzed metric for a specified IFCB bin. 
 
 - `POST /echo` — Echoes the request content back to the user.
 
@@ -13,7 +13,7 @@ docker compose up --build
 ## Request Example
 
 ```bash
-curl -X POST http://localhost:8001/echo \
+curl -X POST http://localhost:8051/echo \
   -H "Content-Type: application/json" \
   -d '{
         "content": "hello service!"

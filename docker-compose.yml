@@ -1,7 +1,11 @@
 services:
-  template_service:
+  ml_analyzed_service:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - PORT=${PORT:-8001}
+    volumes:
+      - "${DATA_DIR:-./data}:/data/ifcb:ro"
     ports:
-      - "8001:8001"
+      - "${PORT:-8001}:${PORT:-8001}"
