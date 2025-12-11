@@ -1,7 +1,7 @@
 [project]
-name = "template-service"
+name = "ml-analyzed-service"
 version = "0.1.0"
-description = "Template microservice."
+description = "Microservice for computing ml_analyzed metric for IFCB bins."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

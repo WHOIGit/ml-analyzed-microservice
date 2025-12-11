@@ -1,4 +1,4 @@
-"""Stateless template processor."""
+"""ML analyzed processor for IFCB bins."""
 
 import logging
 from typing import List
@@ -59,7 +59,7 @@ class MlAnalyzedProcessor(BaseProcessor):
     def get_stateless_actions(self) -> List[StatelessAction]:
         return [
             StatelessAction(
-                name="echo",
+                name="ml_analyzed",
                 path="/ml_analyzed/{bin_id}",
                 path_params_model=MlAnalyzedPathParams,
                 handler=self.handle_ml_analyzed,
